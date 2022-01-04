@@ -1,0 +1,52 @@
+** {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  background-image: url(gradient-bg.jpg);
+  background-size: 100% 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 20vw;
+  color: pink;
+  text-transform: uppercase;
+  margin: 0;
+  mix-blend-mode: difference;
+}
+
+p,
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1vw 0;
+  font-size: 2rem;
+}
+
+.wood-texture {
+  background-image: url(wood-texture-horizontal.png);
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+@media (max-width: 60rem) {
+  body {
+    background-image: url(gradient-bg-vert.jpg);
+    min-height: 100vh;
+  }
+  .wood-texture {
+    background-image: url(wood-texture-vertical.png);
+  }
+}
